@@ -1,0 +1,16 @@
+{
+  "name": "sumeyya-plugins",
+  "owner": {
+    "name": "Sümeyya Eser Arslan"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for React Native connected-health development by Sümeyya Eser Arslan."
+  },
+  "plugins": [
+    {
+      "name": "rn-connected-health",
+      "source": "./",
+      "description": "BLE health devices, tested SIG parsers, HealthKit / Health Connect, Expo, OTA and compliance for React Native."
+    }
+  ]
+}

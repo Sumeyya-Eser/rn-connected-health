@@ -1,0 +1,26 @@
+{
+  "name": "rn-connected-health",
+  "version": "0.2.0",
+  "description": "React Native connected-health toolkit: BLE medical/fitness devices (react-native-ble-plx, tested Bluetooth SIG health profile parsers, background sync, OTA/DFU, testing), Apple HealthKit and Android Health Connect integration, Expo support, and health-data compliance reviews.",
+  "author": {
+    "name": "Sümeyya Eser Arslan",
+    "url": "https://sumeyya-eser.github.io/"
+  },
+  "homepage": "https://sumeyya-eser.github.io/",
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "ble",
+    "bluetooth",
+    "healthkit",
+    "health-connect",
+    "iot",
+    "mobile",
+    "digital-health",
+    "expo",
+    "dfu",
+    "ota",
+    "gdpr",
+    "kvkk"
+  ]
+}
