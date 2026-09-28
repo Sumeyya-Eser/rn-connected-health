@@ -3,4 +3,4 @@ type: regex
 flags: is
 ---
 
-mol/?L
+mol/?L|parseGlucoseMeasurement

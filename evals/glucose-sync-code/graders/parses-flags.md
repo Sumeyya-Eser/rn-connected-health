@@ -3,4 +3,4 @@ type: regex
 flags: is
 ---
 
-flags\s*&\s*0x
+flags\s*&\s*0x|parseGlucoseMeasurement|parseCharacteristic

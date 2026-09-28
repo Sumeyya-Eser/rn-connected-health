@@ -80,6 +80,7 @@ if (Platform.OS === 'android') await device.requestMTU(185);
 ## 8. Parsing Bluetooth SIG health profiles
 
 - **Use `assets/healthParsers.ts` from this skill folder. Don't write parsers from scratch.** It is one dependency-free file with tests (`assets/healthParsers.test.ts`), and it covers heart rate, blood pressure, thermometer, weight, glucose + RACP and pulse oximetry, plus Device Information and battery. `parseCharacteristic(characteristic.uuid, characteristic.value)` takes ble-plx's UUID and base64 value directly.
+- **Reference the assets, don't paste them.** When you can write files, copy `healthParsers.ts` / `gattQueue.ts` into the project unchanged. When you're answering in chat, write `import { parseGlucoseMeasurement, racp } from './healthParsers'`, tell the user to copy the file from this skill's `assets/`, and write only the new code around it. Never reproduce the asset's contents in the answer: it's long, already tested, and retyping it adds bugs.
 - Read `references/health-profiles.md` for flag tables, units and the glucose RACP procedure.
 - Byte 0 is a **flags** byte that decides which fields follow. Never assume fixed offsets.
 - Values are IEEE-11073 **SFLOAT/FLOAT**, not integers. Special values (NaN, NRes, ±∞) must not reach the UI or health stores.

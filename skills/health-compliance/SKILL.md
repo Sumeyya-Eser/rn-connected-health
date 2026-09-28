@@ -1,6 +1,6 @@
 ---
 name: health-compliance
-description: Use when a React Native app handles health data or talks to medical devices and the question is privacy, security or regulation — KVKK (Türkiye), GDPR special-category data, HIPAA, consent flows, data minimisation, encryption at rest, logging/crash-reporting of health data, account and data deletion, App Store 5.1.1/5.1.3 and Google Play health policies, or whether the app is medical device software (EU MDR, FDA SaMD, IEC 62304).
+description: Use when reviewing code or features of a React Native app that handles health data or talks to medical devices (e.g. "review this before launch", code that logs, stores, uploads or sends readings to analytics/crash reporting, or shows health alerts), and whenever the question is privacy, security or regulation — KVKK (Türkiye), GDPR special-category data, HIPAA, consent flows, data minimisation, encryption at rest, logging/crash-reporting of health data, account and data deletion, App Store 5.1.1/5.1.3 and Google Play health policies, or whether the app is medical device software (EU MDR, FDA SaMD, IEC 62304).
 ---
 
 # Health data: privacy, security and regulatory checks

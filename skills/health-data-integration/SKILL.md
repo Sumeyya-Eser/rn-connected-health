@@ -38,7 +38,7 @@ description: Use when reading or writing health data in a React Native app via A
 
 ## 4. Mapping BLE readings to health stores
 
-**Use `assets/healthMapping.ts` from this skill folder** (tests are in `assets/healthMapping.test.ts`). It turns a parsed BLE measurement into a validated `HealthSample` and then into plain HealthKit and Health Connect write descriptors. The platform adapter that calls the libraries stays thin. Read `references/platform-adapters.md` for adapters, permissions and sync.
+**Use `assets/healthMapping.ts` from this skill folder** (tests are in `assets/healthMapping.test.ts`). It turns a parsed BLE measurement into a validated `HealthSample` and then into plain HealthKit and Health Connect write descriptors. The platform adapter that calls the libraries stays thin. As with the parsers, import from it (`import { mapBloodPressure, toHealthKit } from './healthMapping'`) and tell the user to copy the file. Don't paste the whole file into a chat answer. Read `references/platform-adapters.md` for adapters, permissions and sync.
 
 | BLE reading | HealthKit | Health Connect |
 |---|---|---|

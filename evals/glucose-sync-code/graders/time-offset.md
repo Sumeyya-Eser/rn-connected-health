@@ -3,4 +3,4 @@ type: regex
 flags: is
 ---
 
-time[ _-]?offset
+time[ _-]?offset|parseGlucoseMeasurement
