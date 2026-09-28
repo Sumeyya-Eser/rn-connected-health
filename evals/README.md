@@ -12,7 +12,7 @@ Short factual questions (for example "what unit does HealthKit use for SpO₂?")
 | `bp-health-store-writer` | Deterministic dedupe (SyncIdentifier / clientRecordId), kPa conversion, validation, device vs phone time |
 | `hr-connection-service` | Singleton manager, GATT queue, re-subscribe after reconnect, backoff, serial number instead of iOS `device.id` |
 | `android-background-hr` | `connectedDevice` FGS + permissions, starting it from the foreground, iOS restoration, persist-first |
-| `vendor-protocol-parser` | Verified checksum (sum of bytes 1–7), uint16 LE systolic, rejecting bad frames |
+| `vendor-protocol-parser` | Verified checksum (sum of bytes 1–7), not guessing byte 4 (always 0x00 in the captures, so "uint16 LE systolic" and "reserved" are both unproven), rejecting bad frames |
 | `compliance-code-review` | PHI in Sentry/analytics, plaintext AsyncStorage, diagnostic claim → MDR, KVKK/GDPR consent |
 | `expo-health-connect-setup` | Config plugins, per-type permission, rationale screen / activity-alias, minSdk 26, dev build |
 | `dfu-update-flow` | Sync records first, battery/model pre-flight, ble-plx handover, bootloader address change, version check |
